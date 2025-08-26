@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 String s = weightInKgs.getText().toString();
                 double kg = Double.parseDouble(s);
                 double p = calculateWeight(kg);
-                pounds.setText(""+p);
+                pounds.setText(String.format("%s", p));
 
             }
         });
