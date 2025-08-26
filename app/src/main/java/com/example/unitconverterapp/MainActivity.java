@@ -37,7 +37,10 @@ public class MainActivity extends AppCompatActivity {
         toPounds.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                calculateWeight()
+                String s = weightInKgs.getText().toString();
+                double kg = Double.parseDouble(s);
+                double p = calculateWeight(kg);
+                pounds.setText(""+p);
 
             }
         });
